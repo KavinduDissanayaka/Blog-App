@@ -11,11 +11,14 @@ export const LoadDB = async () => {
 LoadDB();
 
 
-
+// API Endpoint to get all blogs
 export async function GET(request) {
     
-    return NextResponse.json({msg:"API Working"})
+const blogs = await BlogModel.find({});
+    return NextResponse.json({blogs})
 }
+
+//API Endpoint For Uploading Blogs
 
 export async function POST(request){
 

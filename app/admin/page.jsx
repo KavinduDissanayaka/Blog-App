@@ -6,6 +6,7 @@ const AdminPage = () => {
     
       <div>
         <Layout/>
+        
       </div>
     
   );
